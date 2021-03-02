@@ -20,3 +20,4 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   log({deterministicDiamond: deterministicDiamond.address});
 };
 export default func;
+func.skip = async () => true;
